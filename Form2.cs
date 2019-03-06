@@ -23,11 +23,7 @@ namespace Gamebilder
             Directory.CreateDirectory(textBox1.Text);
             
             listView1.Items.Clear();
-            string[] items = Directory.GetFiles(textBox1.Text);
-            foreach (string i in items)
-            {
-                listView1.Items.Add(Path.GetFileName(i));
-            }
+            refresh();
             if (File.Exists("uset.set"))
             {
                 StreamReader sr = new StreamReader("uset.set");
@@ -66,19 +62,14 @@ namespace Gamebilder
         {
             if(listView1.SelectedItems.Count != 0)
                 selected = listView1.SelectedItems[0].Text;
-            else
-                MessageBox.Show("Select a file!");
+            
             //MessageBox.Show(listView1.SelectedItems[0].Text);
         }
 
         private void Form2_Activated(object sender, EventArgs e)
         {
             listView1.Items.Clear();
-            string[] items = Directory.GetFiles(textBox1.Text);
-            foreach (string i in items)
-            {
-                listView1.Items.Add(Path.GetFileName(i));
-            }
+            refresh();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -86,12 +77,7 @@ namespace Gamebilder
             File.Delete(textBox1.Text + "/" + listView1.SelectedItems[0].Text);
             listView1.Items.Remove(listView1.SelectedItems[0]);
             listView1.SelectedItems.Clear();
-            listView1.Items.Clear();
-            string[] items = Directory.GetFiles(textBox1.Text);
-            foreach (string i in items)
-            {
-                listView1.Items.Add(Path.GetFileName(i));
-            }
+            refresh();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -137,6 +123,28 @@ namespace Gamebilder
         private void Form2_Load(object sender, EventArgs e)
         {
 
+        }
+        void refresh()
+        {
+            listView1.Items.Clear();
+            string[] items = Directory.GetFiles(textBox1.Text);
+            foreach (string i in items)
+            {
+                if (textBox2.Text != null)
+                {
+                    if(Path.GetFileName(i).Contains(textBox2.Text))
+                    listView1.Items.Add(Path.GetFileName(i));
+                }
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            refresh();
+            if (textBox1.Text != null && textBox1.Text != "")
+                label1.Visible = false;
+            else
+                label1.Visible = true;
         }
     }
 }
