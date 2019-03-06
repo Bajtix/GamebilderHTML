@@ -1,0 +1,15 @@
+C:\Users\Bajtix\source\repos\Gamebilder\Gamebilder\bin\Debug\Gamebilder.exe.config
+C:\Users\Bajtix\source\repos\Gamebilder\Gamebilder\bin\Debug\Gamebilder.exe
+C:\Users\Bajtix\source\repos\Gamebilder\Gamebilder\bin\Debug\Gamebilder.pdb
+C:\Users\Bajtix\source\repos\Gamebilder\Gamebilder\obj\Debug\Gamebilder.csprojAssemblyReference.cache
+C:\Users\Bajtix\source\repos\Gamebilder\Gamebilder\obj\Debug\Gamebilder.Form1.resources
+C:\Users\Bajtix\source\repos\Gamebilder\Gamebilder\obj\Debug\Gamebilder.Properties.Resources.resources
+C:\Users\Bajtix\source\repos\Gamebilder\Gamebilder\obj\Debug\Gamebilder.csproj.GenerateResource.cache
+C:\Users\Bajtix\source\repos\Gamebilder\Gamebilder\obj\Debug\Gamebilder.csproj.CoreCompileInputs.cache
+C:\Users\Bajtix\source\repos\Gamebilder\Gamebilder\obj\Debug\Gamebilder.exe
+C:\Users\Bajtix\source\repos\Gamebilder\Gamebilder\obj\Debug\Gamebilder.pdb
+C:\Users\Bajtix\source\repos\Gamebilder\Gamebilder\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Bajtix\source\repos\Gamebilder\Gamebilder\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Bajtix\source\repos\Gamebilder\Gamebilder\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Bajtix\source\repos\Gamebilder\Gamebilder\obj\Debug\Gamebilder.csproj.CopyComplete
+C:\Users\Bajtix\source\repos\Gamebilder\Gamebilder\obj\Debug\Gamebilder.Form2.resources
